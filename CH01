@@ -10,6 +10,7 @@ ch01
 - Elastic stack 다운 
 
 - 1. 도커 설치
+<a href="https://www.lainyzine.com/ko/article/how-to-install-wsl2-and-use-linux-on-windows-10/#google_vignette">WSL2 설치 및 </a>
 - 2. 리눅스 올리기 [우분투 설치]
 
 version: '3.7'
