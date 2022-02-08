@@ -1,10 +1,39 @@
 ch01 
-환경 구성
+윈도우 환경 구성
 
-- iTerm2 설치 
+- iTerm2 설치 X 
 - git 구성
 - open Source Clone 
 - JENV 구성
 - IntelliJ Comunity 설치
 - Docker 설치
 - Elastic stack 다운 
+
+- 1. 도커 설치
+- 2. 리눅스 올리기 [우분투 설치]
+
+version: '3.7'
+services:
+  ubuntu-windows:
+    image: ubuntu:20.04
+    container_name: ubuntu-windows
+    stdin_open: true
+    tty: true
+    command: [/bin/bash]
+    ports:
+      - 9200:9200
+      - 9300:9300
+      - 5601:5601
+    expose:
+      - 9200
+      - 9300
+      - 5601
+#    networks:
+#      - ubuntu-windows-bridge
+
+#networks:
+#  ubuntu-windows-bridge:
+#    driver: bridge
+
+
+
